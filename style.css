@@ -20,7 +20,7 @@ button {
 
 table {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 30px;
   border-collapse: collapse;
 }
 
@@ -32,5 +32,5 @@ td {
 
 th,
 td {
-  padding: 10px;
+  padding: 20px;
 }
