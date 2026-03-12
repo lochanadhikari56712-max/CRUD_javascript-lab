@@ -3,3 +3,7 @@ body {
   background: #f4f4f4;
   text-align: center;
 }
+.container {
+  width: 60%;
+  margin: auto;
+}
