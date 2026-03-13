@@ -1,4 +1,5 @@
-let editIndex = [null];
+let students = []
+let editIndex = null
 function addStudent() {
   let name = document.getElementById("nameInput").value;
 
@@ -13,3 +14,4 @@ let student = {
 id: students.length + 1,
 name: name
 }
+document.getElementById("nameInput").value=showstudent();
