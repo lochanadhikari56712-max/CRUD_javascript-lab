@@ -39,3 +39,10 @@ function showStudents() {
     table.innerHTML += row;
   }
 }
+unction editStudent(index){
+
+document.getElementById("nameInput").value = students[index].name
+
+editIndex = index
+
+}
