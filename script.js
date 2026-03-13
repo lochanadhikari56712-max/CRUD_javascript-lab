@@ -8,10 +8,17 @@ function addStudent() {
     return;
   }
 }
-if(editIndex === null){
-
-let student = {
-id: students.length + 1,
-name: name
+if (editIndex === null) {
+  let student = {
+    id: students.length + 1,
+    name: name
+  }
+  students.push(student);
+} else {
+  students[editIndex].name = name;
+  editIndex = null;
 }
-document.getElementById("nameInput").value=showstudent();
+document.getElementById("nameInput").value = "";
+showStudents()
+}
+
