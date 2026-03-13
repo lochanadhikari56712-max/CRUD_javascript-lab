@@ -10,7 +10,7 @@ function addStudent() {
 
   if (editIndex === null) {
     let student = {
-      id: students.length + 1,
+      id: Date.now(),
       name: name,
     };
     students.push(student);
@@ -39,10 +39,13 @@ function showStudents() {
     table.innerHTML += row;
   }
 }
-unction editStudent(index){
+function editStudent(index) {
+  document.getElementById("nameInput").value = students[index].name;
 
-document.getElementById("nameInput").value = students[index].name
+  editIndex = index;
+}
+function deleteStudent(index) {
+  students.splice(index, 1);
 
-editIndex = index
-
+  showStudents();
 }
